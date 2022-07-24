@@ -1,4 +1,3 @@
-// constants
 const COLOR_BG = "#0F0F0F"
 const COLOR_CUBE = "#B823BF"
 const SPEED_X = 0.05 // rps
