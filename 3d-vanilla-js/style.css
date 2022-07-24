@@ -1,0 +1,27 @@
+body{
+  background-color: #0F0F0F;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  display: block;
+  background-color: #717D7E ;
+  box-shadow: 0px 0px 5px 1px #B823BF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:#5F6A6A; 
+  box-shadow: 0px 0px 5px 1px #77177c;
+}
+canvas{
+  display: block;
+}
