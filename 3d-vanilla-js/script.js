@@ -49,6 +49,7 @@ var vertices = [
   new POINT3D(cx + size, cy + size, cz + size),
   new POINT3D(cx - size, cy + size, cz + size),
 ]
+
 var edges = [
   [0, 1],
   [1, 2],
