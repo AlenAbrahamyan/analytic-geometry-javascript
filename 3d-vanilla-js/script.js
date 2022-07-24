@@ -8,7 +8,6 @@ const POINT3D = function (x, y, z) {
   this.y = y
   this.z = z
 }
-
 let isDrawLines = false
 
 // set up the canvas and context
