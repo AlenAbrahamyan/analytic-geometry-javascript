@@ -1,0 +1,10 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FEF5E7;
+  color: #34495E;
+  overflow: hidden;
+}
+
+h2{
+  position: absolute;
+}

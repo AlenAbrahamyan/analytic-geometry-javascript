@@ -9,8 +9,7 @@ const POINT3D = function (x, y, z) {
   this.z = z
 }
 let isDrawLines = false
-
-// set up the canvas and context
+ 
 var canvas = document.createElement("canvas")
 var drawLinesToggle = document.createElement("button")
 document.body.appendChild(drawLinesToggle)
@@ -22,13 +21,12 @@ drawLinesToggle.onclick = () => {
 }
 var ctx = canvas.getContext("2d")
 
-// dimensions
+
 var h = document.documentElement.clientHeight / 1.5
 var w = document.documentElement.clientWidth / 1.5
 canvas.height = h
 canvas.width = w
 
-// colours and lines
 ctx.fillStyle = COLOR_BG
 ctx.strokeStyle = COLOR_CUBE
 ctx.lineWidth = w / 100
@@ -49,19 +47,20 @@ var vertices = [
   new POINT3D(cx + size, cy + size, cz + size),
   new POINT3D(cx - size, cy + size, cz + size),
 ]
+
 var edges = [
-  [0, 1],
+  [0, 1],// back face
   [1, 2],
   [2, 3],
-  [3, 0], // back face
-  [4, 5],
+  [3, 0], 
+  [4, 5],// front face
   [5, 6],
   [6, 7],
-  [7, 4], // front face
-  [0, 4],
+  [7, 4], 
+  [0, 4],// connecting sides
   [1, 5],
   [2, 6],
-  [3, 7], // connecting sides
+  [3, 7], 
 ]
 
 // set up the animation loop
@@ -74,7 +73,6 @@ function loop(timeNow) {
   timeDelta = timeNow - timeLast
   timeLast = timeNow
 
-  // background
   ctx.fillRect(0, 0, w, h)
 
   // rotate the cube along the z axis
@@ -122,6 +120,5 @@ function loop(timeNow) {
     ctx.stroke()
   }
 
-  // call the next frame
   requestAnimationFrame(loop)
 }
