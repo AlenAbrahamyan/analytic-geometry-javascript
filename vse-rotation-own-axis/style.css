@@ -1,0 +1,40 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FEF5E7;
+  color: #34495E;
+}
+
+.box-wrapper {
+  position: absolute;
+  background-color: #ffdadd;
+  user-select: none;
+  border: 2px solid #1E88E5;
+  top: 200px;
+  left: 600px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #1E88E5;
+  position: absolute;
+  border-radius: 100px;
+  border: 1px solid white;
+  user-select: none;
+}
+
+.dot.rotate {
+  top: -30px;
+  left: calc(50% - 5px);
+  cursor: url('https://findicons.com/files/icons/1620/crystal_project/16/rotate_ccw.png'), auto;
+}
+
+.rotate-link {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #1E88E5;
+  top: -23px;
+  left: calc(50% + 0.5px);
+  z-index: -1;
+}
