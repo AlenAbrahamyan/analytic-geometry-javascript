@@ -3,7 +3,7 @@ var boxWrapper = document.getElementById("box-wrapper");
 const minWidth = 40;
 const minHeight = 40;
 
-
+//
 var initX, initY, mousePressX, mousePressY, initW, initH, initRotate;
 
 function repositionElement(x, y) {
