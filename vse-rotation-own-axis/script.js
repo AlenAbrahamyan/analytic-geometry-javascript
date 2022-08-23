@@ -2,7 +2,7 @@ const boxWrapper = document.getElementById("box-wrapper")
 
 const triangle = document.createElement("div");
 document.body.appendChild(triangle);
-
+//
 function createLineElement(x, y, length, angle, color='black') {
   var line = document.createElement("div");
   var styles = 'border: 3.5px solid '+ color +'; '
