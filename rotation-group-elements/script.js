@@ -1,6 +1,6 @@
 const boxWrapper = document.getElementById("box-wrapper")
 const elements = document.getElementsByClassName("element")
-
+//
 const initialAxisElements = []
 
 for (let element of elements) {
