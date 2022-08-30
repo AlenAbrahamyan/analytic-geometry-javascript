@@ -1,6 +1,6 @@
 const triangle = document.createElement("div")
 document.body.appendChild(triangle)
-////////////////////////////////
+//////////////////////////////////
 const createLineElement = (x, y, length, angle, color) => {
   var line = document.createElement("div")
   var styles =
