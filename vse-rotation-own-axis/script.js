@@ -1,5 +1,5 @@
 const boxWrapper = document.getElementById("box-wrapper")
-///////////////////////
+/////////////////////////
 const triangle = document.createElement("div");
 document.body.appendChild(triangle);
 
