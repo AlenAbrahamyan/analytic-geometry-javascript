@@ -10,8 +10,8 @@ const POINT3D = function (x, y, z) {
 }
 let isDrawLines = false
  //////////
-var canvas = document.createElement("canvas")
-var drawLinesToggle = document.createElement("button")
+const canvas = document.createElement("canvas")
+let drawLinesToggle = document.createElement("button")
 document.body.appendChild(drawLinesToggle)
 document.body.appendChild(canvas)
 drawLinesToggle.innerHTML = isDrawLines ? "DRAW POINTS" : "DRAW LINES"
@@ -19,11 +19,11 @@ drawLinesToggle.onclick = () => {
   isDrawLines = !isDrawLines
   drawLinesToggle.innerHTML = isDrawLines ? "DRAW POINTS" : "DRAW LINES"
 }
-var ctx = canvas.getContext("2d")
+const ctx = canvas.getContext("2d")
 
 
-var h = document.documentElement.clientHeight / 1.5
-var w = document.documentElement.clientWidth / 1.5
+const h = document.documentElement.clientHeight / 1.5
+const w = document.documentElement.clientWidth / 1.5
 canvas.height = h
 canvas.width = w
 
@@ -33,11 +33,11 @@ ctx.lineWidth = w / 100
 ctx.lineCap = "round"
 
 // cube parameters
-var cx = w / 2
-var cy = h / 2
-var cz = 0
-var size = h / 4
-var vertices = [
+const cx = w / 2
+const cy = h / 2
+const cz = 0
+const size = h / 4
+const vertices = [
   new POINT3D(cx - size, cy - size, cz - size),
   new POINT3D(cx + size, cy - size, cz - size),
   new POINT3D(cx + size, cy + size, cz - size),
@@ -48,7 +48,7 @@ var vertices = [
   new POINT3D(cx - size, cy + size, cz + size),
 ]
 
-var edges = [
+const edges = [
   [0, 1],// back face
   [1, 2],
   [2, 3],
@@ -64,7 +64,7 @@ var edges = [
 ]
 
 // set up the animation loop
-var timeDelta,
+let timeDelta,
   timeLast = 0
 requestAnimationFrame(loop)
 
