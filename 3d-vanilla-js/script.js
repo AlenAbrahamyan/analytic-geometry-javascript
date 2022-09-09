@@ -9,7 +9,7 @@ const POINT3D = function (x, y, z) {
   this.z = z
 }
 let isDrawLines = false
- ////////
+ //////////
 var canvas = document.createElement("canvas")
 var drawLinesToggle = document.createElement("button")
 document.body.appendChild(drawLinesToggle)
